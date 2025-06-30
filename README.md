@@ -24,18 +24,11 @@ Supports historical backtesting + MetaTrader 5 live automated trading with integ
 # Run live (default with demo account, please change to your own account) 
 python live_sma.py --login 123456 --password "passwd" --server "MetaQuotes-Demo"
 
-## Backtest Results
-Final Portfolio Value: $10014.59
-Total Return: 0.15%
-Sharpe Ratio: -14.709
-Max Drawdown: 0.16%
-Total Trades: 27
-Win Rate: 37.04%
-Avg Win: $5.62
-Avg Loss: $-2.45
-Max Win: $6.56
-Max Loss: $-3.76
-Profit Factor: 1.35
+## dependency
+- Python 3.10+
+- backtrader==1.9.78.123
+- MetaTrader5==5.0.45
+- pandas
 
 # 中文
 基于 Backtrader 的 **黄金 (XAUUSD) 双均线交叉策略**  
@@ -58,7 +51,13 @@ Profit Factor: 1.35
 # 跑实盘（默认用演示账号，实际请改成自己的）
 python live_sma.py --login 123456 --password "passwd" --server "MetaQuotes-Demo"
 
-## 回测结果
+## 依赖
+- Python 3.10+
+- backtrader==1.9.78.123
+- MetaTrader5==5.0.45
+- pandas
+
+## Backtest Results
 Final Portfolio Value: $10014.59
 Total Return: 0.15%
 Sharpe Ratio: -14.709
