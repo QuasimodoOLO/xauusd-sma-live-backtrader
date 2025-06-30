@@ -20,20 +20,23 @@ Supports historical backtesting + MetaTrader 5 live automated trading with integ
 - **Complete trading lifecycle**: order placement → automatically pending SL/TP → monitoring floating profit and loss  
 - Built-in indicator analysis (Sharpe, Retracement, Win Rate, Profit Factor)
 
-## Quick Start
-
-```bash
-# Clone the repository 
-git clone https://github.com/<your username>/xauusd-sma-backtrader.git 
-cd xauusd-sma-backtrader 
-pip install -r requirements.txt # see dependencies below
-
-# 1) Run backtest 
-python backtest.py
-
-# 2) Run live (default with demo account, please change to your own account) 
+## REMINDER
+# Run live (default with demo account, please change to your own account) 
 python live_sma.py --login 123456 --password "passwd" --server "MetaQuotes-Demo"
-----------------------------------------------------------------------------------------------
+
+## Backtest Results
+Final Portfolio Value: $10014.59
+Total Return: 0.15%
+Sharpe Ratio: -14.709
+Max Drawdown: 0.16%
+Total Trades: 27
+Win Rate: 37.04%
+Avg Win: $5.62
+Avg Loss: $-2.45
+Max Win: $6.56
+Max Loss: $-3.76
+Profit Factor: 1.35
+
 # 中文
 基于 Backtrader 的 **黄金 (XAUUSD) 双均线交叉策略**  
 支持历史回测 + MetaTrader 5 实盘自动交易，集成 ATR 动态仓位、止损止盈与成本模拟。
@@ -50,22 +53,12 @@ python live_sma.py --login 123456 --password "passwd" --server "MetaQuotes-Demo"
 - **自定义 MT5 实时数据 Feed**：秒级推送到 Backtrader  
 - **完整交易生命周期**：下单→自动挂 SL/TP→监控浮动盈亏  
 - 内置指标分析（Sharpe、回撤、胜率、Profit Factor）
-
-## 快速开始
-
-```bash
-# 克隆仓库
-git clone https://github.com/<你的用户名>/xauusd-sma-backtrader.git
-cd xauusd-sma-backtrader
-pip install -r requirements.txt   # 见下方依赖
-
-# 1）跑回测
-python backtest_sma.py
-
-# 2）跑实盘（默认用演示账号，实际请改成自己的）
+- 
+## 提示
+# 跑实盘（默认用演示账号，实际请改成自己的）
 python live_sma.py --login 123456 --password "passwd" --server "MetaQuotes-Demo"
 
-## Backtest Results
+## 回测结果
 Final Portfolio Value: $10014.59
 Total Return: 0.15%
 Sharpe Ratio: -14.709
