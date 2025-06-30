@@ -1,3 +1,7 @@
+<!-- language switch -->
+[🇺🇸 English](#english) | [🇨🇳 中文](#中文)
+
+# English
 # XAUUSD SMA Crossover - Backtrader
 
 Backtrader-based **Gold (XAUUSD) SMA Crossover Strategy** 
@@ -27,11 +31,10 @@ pip install -r requirements.txt # see dependencies below
 # 1) Run backtest 
 python backtest.py
 
-# 2) Run live (default with demo account, please change to your own actually) 
+# 2) Run live (default with demo account, please change to your own account) 
 python live_sma.py --login 123456 --password "passwd" --server "MetaQuotes-Demo"
 ----------------------------------------------------------------------------------------------
-# XAUUSD SMA Crossover - Backtrader
-
+# 中文
 基于 Backtrader 的 **黄金 (XAUUSD) 双均线交叉策略**  
 支持历史回测 + MetaTrader 5 实盘自动交易，集成 ATR 动态仓位、止损止盈与成本模拟。
 
@@ -61,3 +64,19 @@ python backtest_sma.py
 
 # 2）跑实盘（默认用演示账号，实际请改成自己的）
 python live_sma.py --login 123456 --password "passwd" --server "MetaQuotes-Demo"
+
+## Backtest Results
+Final Portfolio Value: $10014.59
+Total Return: 0.15%
+Sharpe Ratio: -14.709
+Max Drawdown: 0.16%
+Total Trades: 27
+Win Rate: 37.04%
+Avg Win: $5.62
+Avg Loss: $-2.45
+Max Win: $6.56
+Max Loss: $-3.76
+Profit Factor: 1.35
+
+![RESULT](https://github.com/user-attachments/assets/34da039b-274e-41fc-8ff8-4df314acce9c)
+
