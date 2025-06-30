@@ -46,7 +46,6 @@ python live_sma.py --login 123456 --password "passwd" --server "MetaQuotes-Demo"
 - **自定义 MT5 实时数据 Feed**：秒级推送到 Backtrader  
 - **完整交易生命周期**：下单→自动挂 SL/TP→监控浮动盈亏  
 - 内置指标分析（Sharpe、回撤、胜率、Profit Factor）
-- 
 ## 提示
 # 跑实盘（默认用演示账号，实际请改成自己的）
 python live_sma.py --login 123456 --password "passwd" --server "MetaQuotes-Demo"
